@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+*,
+body {
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  background-color: hsl(148, 38%, 91%);
+}
