@@ -87,7 +87,7 @@ const App = () => {
   return (
     <div className="relative">
       {successMessage && (
-        <div className="p-5 text-green-700 border bg-[#2A4144] w-[80%] sm:w-[70%] md:w-[33%] sm:-top-15 text-sm mx-auto rounded-lg absolute left-1/2 transform -translate-x-1/2 -top-5">
+        <div className="p-5 text-green-700 border bg-[#2A4144] w-[80%] sm:w-[70%] lg:w-[33%] sm:-top-15 text-sm mx-auto rounded-lg absolute left-1/2 transform -translate-x-1/2 -top-5">
           <div className="flex items-center gap-2 mb-2">
             <img className="w-[5%]" src={assets.icon_success_check} alt="" />
             <h2 className="text-white font-medium text-lg">Message Sent!</h2>
@@ -99,17 +99,17 @@ const App = () => {
           </div>
         </div>
       )}
-      <main className="w-[90%] sm:w-[80%] md:w-[50%] mx-auto bg-white my-10 sm:my-20 p-5 text-[#2A4144] rounded-2xl shadow-[0_0_10px_rgba(0,0,0,0.2)]">
+      <main className="w-[90%] sm:w-[80%] lg:w-[50%] mx-auto bg-white my-10 sm:my-20 p-5 text-[#2A4144] rounded-2xl shadow-[0_0_10px_rgba(0,0,0,0.2)]">
         <form noValidate onSubmit={handleSubmit}>
           <fieldset>
             <legend className="font-medium text-3xl pb-4">Contact Us</legend>
-            <div className="flex flex-col sm:flex-row md:items-center sm:gap-2.5 justify-between ">
+            <div className="flex flex-col sm:flex-row lg:items-center sm:gap-2.5 justify-between ">
               <div className="w-full">
                 <label htmlFor="firstName" className="mb-5">
                   First Name *
                 </label>
                 <input
-                  className={`border block w-full mt-2 rounded-md py-1.5 p-2 cursor-pointer hover:border-2 hover:border-[#0C7D69] focus:outline-[#0C7D69] transition-colors duration-500 ${
+                  className={`border block w-full mt-2 rounded-lg py-1.5 p-2 cursor-pointer hover:border-2 hover:border-[#0C7D69] focus:outline-[#0C7D69] transition-colors duration-500 ${
                     firstNameError
                       ? "border-red-500 mb-1"
                       : "border-[#86A2A5] mb-6"
