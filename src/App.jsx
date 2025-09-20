@@ -109,7 +109,7 @@ const App = () => {
                   First Name *
                 </label>
                 <input
-                  className={`border block w-full mt-2 rounded-lg py-1.5 p-2 cursor-pointer hover:border-2 hover:border-[#0C7D69] focus:outline-[#0C7D69] transition-colors duration-500 ${
+                  className={`border block w-full mt-2 rounded-lg py-1.5 p-2 cursor-pointer hover:outline-2 hover:outline-[#0C7D69] focus:outline-[#0C7D69] transition-colors duration-500 ${
                     firstNameError
                       ? "border-red-500 mb-1"
                       : "border-[#86A2A5] mb-6"
@@ -132,7 +132,7 @@ const App = () => {
                   Last Name *
                 </label>
                 <input
-                  className={`border block mt-2 w-full p-2 rounded-md py-1.5 cursor-pointer transition-colors duration-500 hover:border-2 hover:border-[#0C7D69] focus:outline-[#0C7D69] ${
+                  className={`border block mt-2 w-full p-2 rounded-md py-1.5 cursor-pointer transition-colors duration-500 hover:outline-2 hover:outline-[#0C7D69] focus:outline-[#0C7D69] ${
                     lastNameError
                       ? "border-red-500 mb-1"
                       : "border-[#86A2A5] mb-6"
@@ -154,7 +154,7 @@ const App = () => {
             <div>
               <label htmlFor="email">Email Address *</label>
               <input
-                className={`block border mt-2 w-full p-2 rounded-md py-1.5 cursor-pointer transition-colors duration-500 hover:border-2 hover:border-[#0C7D69] focus:outline-[#0C7D69] ${
+                className={`block border mt-2 w-full p-2 rounded-md py-1.5 cursor-pointer transition-colors duration-500 hover:outline-2 hover:outline-[#0C7D69] focus:outline-[#0C7D69] ${
                   emailError ? "border-red-500 mb-1" : "border-[#86A2A5] mb-5"
                 }`}
                 type="email"
@@ -178,7 +178,7 @@ const App = () => {
                 {options.map((opt) => (
                   <div
                     key={opt.id}
-                    className={`flex items-center w-full gap-3 py-2 px-4 transition-colors duration-500 rounded-[5px] mb-2 cursor-pointer hover:border-2 hover:border-[#0C7D69] focus:outline-[#0C7D69] ${
+                    className={`flex items-center w-full gap-3 py-2 px-4 transition-colors duration-500 rounded-[5px] mb-2 cursor-pointer hover:outline-2 hover:outline-[#0C7D69] focus:outline-[#0C7D69] ${
                       selected === opt.id
                         ? "border-[#0C7D69] border-2"
                         : "border border-[#86A2A5]"
@@ -226,7 +226,7 @@ const App = () => {
                   setMessage(e.target.value);
                   e.target.value.trim() && setMessageError("");
                 }}
-                className={`border rounded-md block p-2 w-full transition-colors duration-500 h-40 mt-2 cursor-pointer hover:border-2 hover:border-[#0C7D69] focus:outline-[#0C7D69] ${
+                className={`border rounded-md block p-2 w-full transition-colors duration-500 h-40 mt-2 cursor-pointer hover:outline-2 hover:outline-[#0C7D69] focus:outline-[#0C7D69] ${
                   messageError ? "border-red-500" : "border-[#86A2A5]"
                 }`}
               ></textarea>
